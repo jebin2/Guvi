@@ -6,6 +6,10 @@ public class NRegisterNumber {
 		Scanner sc = new Scanner(System.in);
 		HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
 		int n = sc.nextInt();
+		if (n < 0) {
+			System.out.println(0);
+			return;
+		}
 		int count = 0;
 		int key;
 		for (int i = 0; i < n; i++) {
